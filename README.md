@@ -11,11 +11,8 @@
     - [ ] Value
     - [ ] Airdate
     - [ ] Category_id
+    - [ ] Category_title
     - [ ] Game_id
-    
-- [ ] Category
-    - [ ] ID
-    - [ ] Title
 
 ## API definition
 - [ ] Define specific service (konkrečios paslaugos) API methods that WEB system is going to use
