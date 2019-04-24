@@ -1,8 +1,7 @@
-# Jeopardy Question database
-- [ ] Replace "WEB system" with your system name
+# Jeopardy Questionnaire
 
 ## Description
-- [ ] Provide WEB system description in few sentences - its purpose, users, etc.
+    Website for Jeopardy Tv show Questionnaire.
 
 ## Entity definition
 - [ ] Define the entity ("object" that will be manipulated) of WEB system
