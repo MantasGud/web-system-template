@@ -1,4 +1,4 @@
-# WEB system
+# Jeopardy Question database
 - [ ] Replace "WEB system" with your system name
 
 ## Description
