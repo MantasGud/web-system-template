@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jeopardy Stuff</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<!--<body background="Assets/cyberpunk.png"> -->
+<!--<body background="Assets/cyberpunkv2.jpg"> -->
+<body>
+<div class="bs-header">
+    <div class="container-fluid">
+        <div class="col-md-6">
+            <img src="Assets/Logo.jpg" class="rounded" width="750" height="200">
+        </div>
+        <div class="col-md-4">
+            <h1>Jeopardy API use</h1>
+            <p>by <a href="https://github.com/MantasGud">@MantasGud</a></p>
+            <p><a href="https://github.com/MantasGud/web-system-template" class="btn btn-primary btn-large">View On Github</a></p>
+            <p><a href="http://jservice.io/" class="btn btn-primary btn-large">API Link</a></p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="col-md-4">
+        <h1>List of Categories</h1>
+        <p>Write how much categories from the start you want to see:</p>
+        <input type="number" id="numbercategories" min="1" max="100">
+        <button onclick="categoriesList()">Submit</button>
+        <button onclick="RemoveList()">Remove whole list</button>
+        <ul id="categories">
+
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h1>Category by ID</h1>
+        <p>What category would you like to see by ID?</p>
+        <input type="number" id="CategoryIDInput" min="1">
+        <button onclick="categoryByID()">Submit</button>
+        <p id="CategoryID"></p>
+        <br>
+        <h1>Category By Offset</h1>
+        <p>What category would you like to see by writing Offset?</p>
+        <input type="number" id="CategoryOffsetInput" min="1">
+        <button onclick="categoryByOffset()">Submit</button>
+        <p id="CategoryOffset"></p>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="col-md-4">
+        <div class="panel-heading">
+            <h4 color="white">
+                "Random Question"
+                <span class="btn btn-primary btn-large" id="Refresh" onclick="QuestionRefresh()">Refresh
+                </span>
+            </h4>
+        </div>
+      <div class="panel-body">
+            <table class="table table-hover table-bordered">
+                <tbody>
+                    <tr><td><strong>ID</strong></td><td id="IDQuestion">Atsakymas</td></tr>
+                    <tr><td><strong>Value</strong></td><td id="ValueQuestion">Atsakymas</td></tr>
+                    <tr><td><strong>Question</strong></td><td id="QuestionQuestion">Atsakymas</td></tr>
+                    <tr><td><strong>Answer</strong></td><td id="AnswerQuestion">Atsakymas</td></tr>
+                    <tr><td><strong>Air Date</strong></td><td id="AirDateQuestion">Atsakymas</td></tr>
+                    <tr><td><strong>Category ID</strong></td><td id="CategoryIDQuestion">Atsakymas</td></tr>
+                    <tr><td><strong>Game ID</strong></td><td id="GameIDQuestion">Atsakymas</td></tr>
+                </tbody>
+
+            </table>
+
+
+       </div>
+    </div>
+
+</div>
+
+
+</body>
+<script src="Backend/Backend.js"></script>
+</html>
