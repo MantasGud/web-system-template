@@ -28,7 +28,7 @@
 
    • 404 Not found
    
-- Get number of Categories(max 100) /api/categories?count=:number
+- Get 50 first Categories /api/categories?count=50
 
 - 404 Page not found
 
