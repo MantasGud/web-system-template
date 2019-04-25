@@ -10,26 +10,26 @@
     - [ ] Question
     - [ ] Value
     - [ ] Airdate
-    - [ ] Category_id
-    - [ ] Category_title
+    - [ ] Category_ID
     - [ ] Game_id
+    
+- [ ] Category
+    - [ ] Category_ID
+    - [ ] Category_Title
 
 ## API definition
-- [ ] Define specific service (konkrečios paslaugos) API methods that WEB system is going to use
-- [ ] Optionally define additional API methods that WEB system is going to expose
-- [ ] API should have at least 4 methods
-    - [ ] A method to return entity by ID. Should not have request body
-    - [ ] A method to return multiple entities (Array) by ID. This method should support at least one header value to:
-        - [ ] Return only entities that match pattern in one of its attributes
-        - [ ] Return 10 entities starting provided index
-        - [ ] Return sorted entities by one of its attributes (both ascending and descending)
-        - [ ] Other (should be approved by Product Owner (PO))
-    - [ ] A method to remove entity by ID. Returns removed entity. Should not have request body
-    - [ ] A method to update entity by ID. Accepts entity to update and returns updated entity
-- [ ] Each method should have HTTP method defined
-- [ ] Each method should have URI defined (use {id} as entity ID placeholder)
-- [ ] Should return all 4xx errors in unified format. Define format using `joi` language
-- [ ] Should return all 5xx errors in unified format. Define format using `joi` language
+- Get Random Question http://jservice.io/api/random
+
+- Get category offset from first one /api/categories?offset=:Offset
+   • 404 Not found category
+- Get Category by ID /api/category?id=:id
+   • 404 Not found
+- Get number of Categories(max 100) /api/categories?count=:number
+
+- 404 Page not found
+
+- 500 Server error
+
 
 ## UI definition
 - [ ] Define the structure of how visually the WEB system is going to look like
