@@ -21,9 +21,13 @@
 - Get Random Question http://jservice.io/api/random
 
 - Get category offset from first one /api/categories?offset=:Offset
+
    • 404 Not found category
+   
 - Get Category by ID /api/category?id=:id
+
    • 404 Not found
+   
 - Get number of Categories(max 100) /api/categories?count=:number
 
 - 404 Page not found
