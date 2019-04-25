@@ -1,7 +1,7 @@
-# Jeopardy Questionnaire
+# Jeopardy Questions and Category search
 
 ## Description
-    Website for Jeopardy Tv show Questionnaire.
+   Get random questions from famous game named Jeopardy. Also you can search for categories in this website.     
 
 ## Entity definition
 - [ ] Question
@@ -28,7 +28,7 @@
 
    • 404 Not found
    
-- Get 50 first Categories /api/categories?count=50
+- Get first Categories(from 1 to 100) /api/categories?count=:id
 
 - 404 Page not found
 
@@ -36,6 +36,7 @@
 
 
 ## UI definition
+
 - [ ] Define the structure of how visually the WEB system is going to look like
 - [ ] Should have at least one view defined with https://wireframe.cc (or other wireframe tool):
 - [ ] The view should have a title
