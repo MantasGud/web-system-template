@@ -5,17 +5,17 @@
 
 ## Entity definition
 - [ ] Question
-    - [ ] ID - integer
-    - [ ] Answer - string
-    - [ ] Question - string
-    - [ ] Value - string
-    - [ ] Airdate - string
-    - [ ] Category_ID - integer
-    - [ ] Game_id - integer
+    - [ ] ID - integer(max number(2147483647))
+    - [ ] Answer - string(max length(10000))
+    - [ ] Question - string(max length(10000))
+    - [ ] Value - string(max length(10000))
+    - [ ] Airdate - string(max length(10000))
+    - [ ] Category_ID - integer(max number(2147483647))
+    - [ ] Game_id - integer(max number(2147483647))
     
 - [ ] Category
-    - [ ] Category_ID - integer
-    - [ ] Category_Title - string
+    - [ ] Category_ID - integer()
+    - [ ] Category_Title - string(max length(10000))
 
 ## API definition
 - Get Random Question http://jservice.io/api/random
