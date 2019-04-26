@@ -14,7 +14,7 @@
     - [ ] Game_id - integer(max number(2147483647))
     
 - [ ] Category
-    - [ ] Category_ID - integer()
+    - [ ] Category_ID - integer(max number(2147483647))
     - [ ] Category_Title - string(max length(10000))
 
 ## API definition
