@@ -31,6 +31,7 @@
 - Get first Categories(from 1 to 100) /api/categories?count=:id
 
 - Post invalid mark of Question /api/invalid?id=:id
+
    • 404 Question not found
 
 - 404 Page not found
